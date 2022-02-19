@@ -20,7 +20,10 @@ tablolar
         kullanıcı Id si ile sepet ve icindeki ürünleri getirme (getCartByUserId)
 
 projeyi direk çalıştırabilirsiniz DbInitializer ile bir kaç ürün (product) ve 3 adet sepet (cart) verisi eklenecektir db ye.
+proje çalıştığında açılan url de api/values değerlerini silerek yerine swagger yazıp swaggerUI üzerinden istek atabilirsiniz  
+( örnek => https://localhost:44315/swagger/index.html )
 veri tabanı bağlantısını düzenlemek/belirtmek için Cart/appsettings.json içerisindeki DefaultConnection değerlerini deiştirebilirsiniz
+( örnek => Server=MyServeName;Database=MyDatabseName;Trusted_Connection=True;MultipleActiveResultSets=true)
 
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Cart4;Trusted_Connection=True;MultipleActiveResultSets=true"
