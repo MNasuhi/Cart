@@ -1,0 +1,27 @@
+Sepete ürün ekleme sepetten ürün silme işlemleri yapabilen .net core api projesi.
+
+tablolar
+  sepet (cart)
+  ürün (product)
+  sepetteki ürün (productInCart)
+ 
+ api
+    ürün (product)
+        tüm ürünlerin listelendiği servis (getAllProducts)
+        ürün Id si ile ürün getiren servis (getProductById)
+        ürün Kodu ile ürün getiren servis (getProductByProductCode)
+        
+    sepet (cart)
+        sepete ürün ekleme (addProductToCart)
+        sepetten ürün silme (removeProductFromCart)
+        sepetten belli bir ürünü silme (removeThisProductFromCart)
+        sepetteki tüm ürünleri silme (clearCart)
+        sepet Id si ile sepet ve icindeki ürünleri getirme (getCartByCartId)
+        kullanıcı Id si ile sepet ve icindeki ürünleri getirme (getCartByUserId)
+
+projeyi direk çalıştırabilirsiniz DbInitializer ile bir kaç ürün (product) ve 3 adet sepet (cart) verisi eklenecektir db ye.
+veri tabanı bağlantısını düzenlemek/belirtmek için Cart/appsettings.json içerisindeki DefaultConnection değerlerini deiştirebilirsiniz
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Cart4;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
